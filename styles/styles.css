@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 20% 15%;
+    grid-template-rows: 12vh 15vh 1fr 10vh;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas:
+    "header header header"
+    "hero hero adv"
+    "main main sidebar"
+    "footer footer footer";
+    height: 100vh;
+    margin: 0;
+}
+.header {
+    grid-area: header;
+    background-color: #648ca6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    grid-column: 1 / 4;
+    max-height: auto;
+  }
+  
+
+  .hero {
+    grid-area: hero;
+    background-color: yellow;
+  }
+  .adv {
+    grid-area: adv;
+    background-color: #394263;
+  }
+  .main {
+    grid-area: main;
+    background-color: #8fd4d9;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color:greenyellow;  
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #648ca6;
+  }
+  
