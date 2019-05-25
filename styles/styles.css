@@ -84,6 +84,12 @@
 		"footer";
 }
 
+@media (max-width: 576px){
+	.item2 .item7 {
+		display: none;
+	}
+}
+
 
 @media (min-width: 576px){
 	.container{
