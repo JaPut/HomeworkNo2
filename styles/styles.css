@@ -1,3 +1,6 @@
+
+
+
 .item1 {
 	background: rgb(133, 188, 223);
 	grid-area: header;
@@ -32,34 +35,193 @@
 }
   
 .item2 {
-	background: rgb(252, 197, 176);
+	
+	color: white; 
+   font: bold 30px Helvetica, Arial, Sans-Serif;
+   text-shadow: 7px 7px #252524, 
+                2px 2px #222020, 
+                3px 3px #fe4902;
+	text-align: center;
+	line-height: 130px;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: Gradient 5s ease infinite;
 	grid-area: herofeature;
 }
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 .item3 {
 	background: PaleTurquoise;
 	grid-area: heroaction;
+	font-size: 15px;
+	font-style: oblique;
+	font-weight: bolder;
+	font-variant: small-caps;
+	text-align: center;
+	padding: 10px;
+	
 }
 
 .item4 {
-	background: rgb(165, 218, 22);
+	background-color: #000;
+    color: #00fa00;
+    font-family: monospace;
 	grid-area: bodyfeature;
+	font-size: 20px;
+	
 }
 
+
+.container7 p {
+    margin: 15px;
+	white-space: wrap;
+	overflow: hidden;
+    animation: type 10s steps(50, end), caret-blink .8s ease infinite;
+	border-right: 10px solid #00fa00;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes caret-blink {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #00fa00;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
 .item5 {
 	background: rgb(218, 22, 97);
 	grid-area: advert;
+	background-image: url(/img/Deadbull.JPG);
+	background-repeat: repeat;
+	background-size: 100% 100%;
+	background-position: center;
+		
 }	
 
 .item6 {
 	background: rgb(11, 170, 130);
 	grid-area: bodylisting;
+	object-fit: contain;
 }
 
+.tittle-images {
+	color: blue;
+	letter-spacing: 2;
+	text-shadow: 2px 2px #ff0000;
+	word-spacing: 10px;
+	text-align: center;
+}
+div.gallery {
+	border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+  
+  div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  
+  div.desc {
+	padding: px;
+	text-align: center;
+	font-size: 20px;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  .responsive {
+	padding: 0 3px;
+	float: left;
+	width: 30%;
+	margin-left: 10px;
+	
+  }
+  
 .item7 {
 	background: rgb(236, 126, 231);
 	grid-area: sidebar;
 }
+
+
+.vertical-menu {
+	
+	width: 100%; 
+	text-align: center;
+	padding: 20px;
+	
+  }
+  
+  .vertical-menu a {
+	
+	color: black; 
+	display: block; 
+	padding: 12px; 
+	text-decoration: honeydew; 
+	display: inline;
+}
+  
+  .vertical-menu a:hover {
+	background-color: #ccc; 
+  }
+  
+  .vertical-menu a.active {
+	background-color: #4CAF50; 
+	color: white;
+  }
+  
 
 .item8 {
 	background: rgb(195, 221, 224);
@@ -88,8 +250,8 @@
 	.item2 .item7 {
 		display: none;
 	}
+	
 }
-
 
 @media (min-width: 576px){
 	.container{
@@ -125,6 +287,33 @@
 		width: 20vw;
 		height: 66%;
 		margin: 2px;
+	}
+	.responsive {
+		width: 20%;
+		margin: 6px 6px;
+		padding: 1px;
+		margin-left: 65px
+	}	
+	.item2 {
+		line-height: 50px;
+	}
+	.item3 {
+		font-size: 21px;
+	}
+	.item5 {
+		
+		background-size: 100%;
+		background-position: center;
+		
+	}	
+	
+.container7 p {
+    margin: 15px;
+	white-space: wrap;
+	overflow: hidden;
+    animation: type 5s steps(50, end), caret-blink .8s ease infinite;
+	border-right: 10px solid #00fa00;
+	font-size: 27px;
 	}
 }
 
@@ -169,4 +358,51 @@
 		height: 50%;
 		margin: 15px;
 	}
+	.responsive {
+		width: 30%;
+		margin: 0px 0px;
+		padding: 0px;
+		margin-left: 14px;
+	}
+	.item2 {
+		line-height: 140px;
+	}
+	.item3 {
+		font-size: 25px;
+	}
+	.item5 {
+		
+		background-size: 100%;
+		background-position: center;
+		
+	}	
+	.container7 p {
+		margin: 15px;
+		white-space: wrap;
+		overflow: hidden;
+		animation: type 5s steps(50, end), caret-blink .8s ease infinite;
+		border-right: 10px solid #00fa00;
+		font-size: 27px;
+	}	
+	.vertical-menu {
+		width: 100%; /* Set a width if you like */
+		text-align: center;
+	  }
+	  
+	  .vertical-menu a {
+		/* background-color: #eee; Grey background color */
+		color: black; /* Black text color */
+		display: block; /* Make the links appear below each other */
+		padding: 12px; /* Add some padding */
+		text-decoration: honeydew; /* Remove underline from links */
+	  }
+	  
+	  .vertical-menu a:hover {
+		background-color: #ccc; /* Dark grey background on mouse-over */
+	  }
+	  
+	  .vertical-menu a.active {
+		background-color: #4CAF50; /* Add a green color to the "active/current" link */
+		color: white;
+	  }
 }
