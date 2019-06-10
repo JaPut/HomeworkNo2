@@ -124,7 +124,7 @@ body {
 .item5 {
 	background: rgb(218, 22, 97);
 	grid-area: advert;
-	background-image: url(/deadbull.JPG);
+	background-image: url(../deadbull.JPG);
 	background-repeat: repeat;
 	background-size: 100% 100%;
 	background-position: center;
